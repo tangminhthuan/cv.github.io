@@ -1,0 +1,241 @@
+body {
+  background: #9e9c9a;
+  justify-content: center;
+  align-items: center;
+  min-height: 1000px;
+  min-width: 1200px;
+  font-family: sans-serif;
+  display: flex;
+  font-size: 14px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  min-height: 1200px;
+  background: white;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .left_Side {
+  position: relative;
+  background: #062446;
+  padding: 40px 40px 0 40px;
+  color: #ffffff;
+}
+.container .left_Side .borderO {
+  bottom: 10px;
+  position: relative;
+  width: 34px;
+  height: 38.25px;
+  float: left;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  background: white;
+  overflow: hidden;
+}
+.container .left_Side .borderO .borderI {
+  position: absolute;
+  left: 1.97px;
+  bottom: 2.19px;
+  width: 30px;
+  height: 33.75px;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  background: #062446;
+  overflow: hidden;
+}
+.container .left_Side .borderO .borderI i {
+  position: absolute;
+  left: 8px;
+  bottom: 10px;
+  font-size: 16px;
+}
+.container .left_Side h3 {
+  position: relative;
+  z-index: 1;
+}
+.container .left_Side h3 span {
+  background: #062446;
+}
+.container .left_Side .profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.container .left_Side .profile h2 {
+  font-size: 1.2em;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.container .left_Side .profile h2 span {
+  font-size: 0.7em;
+  font-weight: 300;
+}
+.container .left_Side .boder {
+  position: relative;
+  width: 205px;
+  height: 230.625px;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  background: white;
+  overflow: hidden;
+}
+.container .left_Side .boder .imgBx {
+  position: absolute;
+  left: 2.5px;
+  bottom: 2.7px;
+  width: 200px;
+  height: 225px;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  overflow: hidden;
+}
+.container .left_Side .boder .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 130%;
+  object-fit: cover;
+}
+.container .left_Side h3 span::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 9px;
+  left: 64%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.container .left_Side .skills_list {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.container .left_Side .skills_list .skills_border {
+  top: 4px;
+  position: relative;
+  width: 101.1px;
+  height: 12px;
+  background: white;
+  border-radius: 10px;
+}
+.container .left_Side .skills_list .skills_border .skills_bar {
+  margin-top: -13px;
+}
+.container .left_Side .skills_list .skills_border .skills_bar p {
+  position: absolute;
+  width: 100px;
+  height: 10px;
+  background: #062446;
+  border-radius: 10px;
+}
+.container .left_Side .skills_list .skills_border .skills_bar p span {
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.container .right_Side {
+  position: relative;
+  background: #e3e3e3;
+  padding: 40px 40px 0 40px;
+  color: #062446;
+}
+.container .right_Side .list-info {
+  margin: 50px 0 50px 0;
+}
+.container .right_Side h3 {
+  position: relative;
+  z-index: 1;
+}
+.container .right_Side h3 span {
+  background: #e3e3e3;
+}
+.container .right_Side h3 span::after {
+  content: "";
+  width: 100%;
+  height: 2.5px;
+  background: #062446;
+  position: absolute;
+  bottom: 0.5em;
+  left: 56.2%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.container .right_Side .borderO {
+  bottom: 10px;
+  position: relative;
+  width: 34px;
+  height: 38.25px;
+  float: left;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  background: #062446;
+  overflow: hidden;
+}
+.container .right_Side .borderO .borderI {
+  position: absolute;
+  left: 1.97px;
+  bottom: 2.19px;
+  width: 30px;
+  height: 33.75px;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  background: #e3e3e3;
+  overflow: hidden;
+}
+.container .right_Side .borderO .borderI i {
+  position: absolute;
+  left: 8px;
+  bottom: 10px;
+  font-size: 16px;
+  color: #062446;
+}
+.container .right_Side .list {
+  display: flex;
+  margin: 35px 0 35px 0;
+  padding: 26px;
+}
+.container .right_Side .skills_list {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.container .right_Side .skills_list .skills_border {
+  top: 4px;
+  position: relative;
+  width: 101.1px;
+  height: 12px;
+  background: #062446;
+  border-radius: 10px;
+}
+.container .right_Side .skills_list .skills_border .skills_bar {
+  margin-top: -13px;
+}
+.container .right_Side .skills_list .skills_border .skills_bar p {
+  position: absolute;
+  width: 100px;
+  height: 10px;
+  background: #e3e3e3;
+  border-radius: 10px;
+}
+.container .right_Side .skills_list .skills_border .skills_bar p span {
+  position: absolute;
+  background: #062446;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

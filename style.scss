@@ -1,0 +1,243 @@
+$Color1:#062446;
+$Color2: white;
+$Color3: #e3e3e3;
+$hexagon:polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+body{
+  background: #9e9c9a;
+  justify-content: center;
+  align-items: center;
+  min-height: 1000px;
+  min-width: 1200px;
+  font-family: sans-serif;
+  display: flex;
+  font-size: 14px;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  min-height: 1200px;
+  background:$Color2;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  .left_Side{
+    position: relative;
+    background: $Color1;
+    padding: 40px 40px 0 40px;
+    color: #ffffff;
+    .borderO{
+      bottom: 10px;
+      position: relative;
+      width: 34px;
+      height: 38.25px;
+      float: left;
+      clip-path: $hexagon;
+      background:$Color2;
+      overflow: hidden;
+      .borderI{
+        position: absolute;
+        left: 1.97px;
+        bottom: 2.19px;
+        width: 30px;
+        height: 33.75px;
+        clip-path: $hexagon;
+        background: $Color1;
+        overflow: hidden;
+        i{
+          position: absolute;
+          left: 8px;
+          bottom: 10px;
+          font-size:16px;
+        }
+      }
+    }
+    h3{
+      position: relative;
+      z-index: 1;
+      span {
+        background: #062446;
+      }
+    }
+    .profile{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 20px;
+      h2{
+        font-size: 1.2em;
+        margin-top: 10px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        line-height: 1.4em;
+        span{
+            font-size: 0.7em;
+            font-weight: 300;
+          }
+        }
+      }
+      .boder{
+        position: relative;
+        width: 205px;
+        height: 230.625px;
+        clip-path: $hexagon;
+        background: $Color2;
+        overflow: hidden;
+        .imgBx{
+          position: absolute;
+          left: 2.5px;
+          bottom: 2.7px;
+          width: 200px;
+          height: 225px;
+          clip-path: $hexagon;
+          overflow: hidden;
+          img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 130%;
+            object-fit: cover;
+          }
+        }
+      }
+    h3 span::after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: #ffffff;
+      position: absolute;
+      bottom: 9px;
+      left: 64%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+    .skills_list{
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+      .skills_border{
+        top: 4px;
+        position: relative;
+        width: 101.1px;
+        height: 12px;
+        background: $Color2;
+        border-radius: 10px;
+        .skills_bar{
+          margin-top: -13px;
+          p{
+            position: absolute;
+            width: 100px;
+            height: 10px;
+            background: $Color1;
+            border-radius: 10px;
+            span{
+              position: absolute;
+              background: $Color2;
+              width: 100%;
+              height: 100%;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .right_Side {
+    position: relative;
+    background: $Color3;
+    padding: 40px 40px 0 40px;
+    color: $Color1;
+    .list-info{
+      margin: 50px 0 50px 0;
+    }
+
+    h3 {
+      position: relative;
+      z-index: 1;
+
+      span {
+        background: $Color3;
+      }
+      span::after {
+        content: '';
+        width: 100%;
+        height: 2.5px;
+        background: $Color1;
+        position: absolute;
+        bottom: 0.5em;
+        left: 56.2%;
+        transform: translateX(-50%);
+        z-index: -1;
+      }
+    }
+    .borderO {
+      bottom: 10px;
+      position: relative;
+      width: 34px;
+      height: 38.25px;
+      float: left;
+      clip-path: $hexagon;
+      background: $Color1;
+      overflow: hidden;
+      .borderI {
+        position: absolute;
+        left: 1.97px;
+        bottom: 2.19px;
+        width: 30px;
+        height: 33.75px;
+        clip-path: $hexagon;
+        background: $Color3;
+        overflow: hidden;
+        i{
+          position: absolute;
+          left: 8px;
+          bottom: 10px;
+          font-size:16px;
+          color: $Color1;
+        }
+      }
+    }
+    .list{
+      display: flex;
+      margin: 35px 0 35px 0;
+      padding: 26px;
+    }
+    .skills_list{
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+      .skills_border{
+        top: 4px;
+        position: relative;
+        width: 101.1px;
+        height: 12px;
+        background: $Color1;
+        border-radius: 10px;
+        .skills_bar{
+          margin-top: -13px;
+          p{
+            position: absolute;
+            width: 100px;
+            height: 10px;
+            background: $Color3;
+            border-radius: 10px;
+            span{
+              position: absolute;
+              background: $Color1;
+              width: 100%;
+              height: 100%;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+a{
+  text-decoration: none;
+}
